@@ -1,81 +1,91 @@
-# 🏏 Console Cricket Game
+🏏 Console Cricket Game
 
-A fun **console-based cricket game** built in **Java** using the **MVC (Model-View-Controller)** architecture.  
-Play against the computer, track runs, wickets, and overs — with a live **scorecard** displayed in colorful terminal output.
+A console-based Cricket game built in Java using the MVC (Model-View-Controller) architecture.
+Play a fun cricket match in your terminal with colorful text, random runs, wickets, and a live scorecard.
 
----
+📌 Features
 
-## 📌 Features
-- 🎮 Console-based gameplay
-- 🏏 Batting system with random outcomes (Runs, Wickets, Extras)
-- 📊 Live **Scorecard** (Runs, Wickets, Balls, Overs, Run Rate)
-- 🌈 Colorful terminal text (using ANSI escape codes)
-- 🎯 MVC Architecture for clean code separation
-  - **Model** → Player, Match, ScoreCard
-  - **View** → GameView (handles colorful output)
-  - **Controller** → GameController (manages game flow)
-- 🚀 Easy to extend (e.g., add 2-player mode, custom overs/wickets)
+🎮 Interactive console gameplay
 
----
+⚡ Random runs & wicket generation for each ball
 
-## 🏗️ Project Structure
-ConsoleCricket/
-│── src/
-│ ├── Main.java
-│ ├── controller/
-│ │ └── GameController.java
-│ ├── model/
-│ │ ├── Player.java
-│ │ ├── ScoreCard.java
-│ │ └── Match.java
-│ └── view/
-│ └── GameView.java
-│
-│── README.md
+📊 Live scorecard updates (runs, wickets, overs, balls)
 
+🎨 Colorful terminal output (using ANSI escape codes)
 
----
+🏗️ Built with MVC Architecture
 
-## ⚡ Installation & Run
+🧑‍💻 Single-file Java project (easy to run)
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/console-cricket.git
-   cd console-cricket/src
+🏗️ Architecture (MVC)
+
+Model → Player, ScoreCard, Match (game logic & data)
+
+View → GameView (handles colorful console display)
+
+Controller → GameController (controls game flow)
+
+Main → Starts the game
+
+📂 Project Setup
+
+Since this project is a single file, all code is in Main.java.
+
+🚀 How to Run
+1️⃣ Clone Repository
+git clone https://github.com/your-username/console-cricket.git
+cd console-cricket
+
+2️⃣ Compile
 javac Main.java
+
+3️⃣ Run
 java Main
 
-#🎮 Gameplay Flow
--Enter your player name.
--Choose the number of overs.
--Start batting against the computer:
--Runs are generated randomly (0,1,2,3,4,6)
--Wickets fall randomly!
--Score updates after every ball.
--Game ends after all overs or all wickets are lost.
--Final Scorecard is displayed.
+🎨 Terminal Colors
 
-#🌈 Terminal Colors
--🟢 Runs → Green
--🔴 Wickets → Red
--🟡 Extras → Yellow
--🔵 Game Info → Blue
--(Color codes are handled using ANSI escape codes.)
+This project uses ANSI escape codes for colored text:
 
-#Sample Output
-🏏 Welcome to Console Cricket!
-Enter your name: Ajay
-Enter number of overs: 2
+🟢 Green → Runs Scored
 
-Over 1, Ball 1 → You scored 4 runs! 🟢
-Over 1, Ball 2 → WICKET! 🔴
-Over 1, Ball 3 → You scored 6 runs! 🟢
+🔴 Red → Wicket Lost
+
+🔵 Blue → Scorecard Header
+
+🟡 Yellow → Over/Ball updates
+
+📊 Example Gameplay
+🏏 Welcome to Console Cricket! 🏏
+
+Over 1 Ball 1 → Scored 4 runs 🟢
+Over 1 Ball 2 → WICKET! 🔴
+Over 1 Ball 3 → Scored 1 run 🟢
 
 📊 Scorecard:
-Player: Ajay
-Runs: 10
+Total Runs: 5
 Wickets: 1
-Balls: 3
 Overs: 0.3
-Run Rate: 20.0
 
+🛠️ Tech Stack
+
+Language: Java
+
+Paradigm: Object-Oriented Programming (OOP)
+
+Design Pattern: MVC Architecture
+
+🌟 Future Enhancements
+
+👥 Add 2-player mode
+
+⚙️ Configurable overs & players
+
+🏆 Match summary at the end
+
+💾 Save match history to file
+
+📜 License
+
+This project is licensed under the MIT License – free to use, modify, and distribute.
+
+✨ Developed by Ajay 🚀
